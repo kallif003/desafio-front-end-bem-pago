@@ -1,7 +1,7 @@
 import * as React from "react"
 import { render } from "@testing-library/react"
 
-import { Header, HeaderTitle } from "./index"
+import { Header, HeaderTitle } from "./"
 
 describe("Header components", () => {
 	it("Renders Header properly", () => {

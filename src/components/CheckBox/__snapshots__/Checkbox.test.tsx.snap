@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox components Renders Checkbox properly 1`] = `
+<div
+  class="sc-dkPtRN hkzJFg"
+>
+  Test
+</div>
+`;
+
+exports[`Checkbox components Renders CheckboxContainer properly 1`] = `
+<div
+  class="sc-gsDKAQ kfqDGY"
+>
+  Test
+</div>
+`;
+
+exports[`Checkbox components Renders CheckboxDiv properly 1`] = `
+<div
+  class="sc-bdvvtL dtwonP"
+>
+  Test
+</div>
+`;
+
+exports[`Checkbox components Renders TextCheckBox properly 1`] = `
+<label
+  class="sc-hKwDye gwbBsU"
+>
+  Test
+</label>
+`;
