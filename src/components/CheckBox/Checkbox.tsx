@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState } from "react"
 import { Checkbox, CheckboxContainer, TextCheckBox } from "./"
 import Icon from "@mdi/react"
@@ -5,12 +6,12 @@ import { mdiCheckBold } from "@mdi/js"
 
 const MyCheckBox = ({ name }: any) => {
 	const [checked, setChecked] = useState(false)
-	const [names, setName] = useState("")
+	const [checkbox, setCheckbox] = useState("")
 
 	function handleCheckboxChange(name: any) {
-		setName(name)
+		setCheckbox(name)
 		setChecked(!checked)
-		console.log(names)
+		if (!checked) setCheckbox("")
 	}
 	return (
 		<div>
