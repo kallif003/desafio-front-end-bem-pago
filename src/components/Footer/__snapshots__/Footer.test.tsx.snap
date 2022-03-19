@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header components Renders Header properly 1`] = `
+exports[`Footer components Renders Footer properly 1`] = `
 <footer
   class="sc-bdvvtL ljwECo"
 >
