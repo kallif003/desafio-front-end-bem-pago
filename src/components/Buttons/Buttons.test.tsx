@@ -2,7 +2,7 @@ import * as React from "react"
 import { render } from "@testing-library/react"
 import userEvent from "@testing-library/user-event"
 
-import { SubmitButton, PlusAndMinusButton } from "./index"
+import { SubmitButton, PlusAndMinusButton } from "./"
 
 describe("Buttons components", () => {
 	it("Renders Submit button properly", () => {
