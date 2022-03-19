@@ -9,6 +9,7 @@ module.exports = {
 		"google",
 		"plugin:prettier/recommended",
 		"plugin:react/jsx-runtime",
+		"next",
 	],
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
