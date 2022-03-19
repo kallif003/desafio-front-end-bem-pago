@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio components Renders Radio properly 1`] = `
+<div
+  class="sc-dkPtRN hmgAsr"
+>
+  Test
+</div>
+`;
+
+exports[`Radio components Renders RadioContainer properly 1`] = `
+<div
+  class="sc-gsDKAQ kbwKNF"
+>
+  Test
+</div>
+`;
+
+exports[`Radio components Renders RadioDiv properly 1`] = `
+<div
+  class="sc-bdvvtL kIGxEc"
+>
+  Test
+</div>
+`;
+
+exports[`Radio components Renders TextRadio properly 1`] = `
+<label
+  class="sc-hKwDye cQuiWy"
+>
+  Test
+</label>
+`;
