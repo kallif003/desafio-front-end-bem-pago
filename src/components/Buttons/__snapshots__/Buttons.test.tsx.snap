@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Buttons components Renders Plus and minus button properly 1`] = `
+<button
+  class="sc-gsDKAQ bXwCQJ"
+>
+  +
+</button>
+`;
+
+exports[`Buttons components Renders Submit button properly 1`] = `
+<button
+  class="sc-bdvvtL dcdrDj"
+>
+  Enviar
+</button>
+`;
