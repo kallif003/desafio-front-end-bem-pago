@@ -1,11 +1,11 @@
 import styled from "styled-components"
 
 export const CheckboxDiv = styled.div`
-	padding: 0.31em;
-	width: 10em;
+	padding: 0.31rem;
+	width: 10rem;
 	height: auto;
 	justify-content: center;
-	margin: 0.5em;
+	margin: 0.5rem;
 `
 
 export const CheckboxContainer = styled.div.attrs(
@@ -14,29 +14,30 @@ export const CheckboxContainer = styled.div.attrs(
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	padding: 1px 20px 6px;
-	margin: 0.5em;
-	width: 8.2em;
-	height: 2.5em;
-	border-radius: 5px;
+	padding: 0.067rem 2.5rem 0.38rem 0.067rem;
+	margin: 0.5rem;
+	width: 8.2rem;
+	height: 2.5rem;
+	border-radius: 0.31rem;
 	background: ${(props) => props.background};
 `
-export const Checkbox = styled.div`
-	width: 1.2em;
-	height: 1.2em;
+export const Checkbox = styled.button`
+	width: 1.2rem;
+	height: 1.2rem;
 	border: solid #ccc;
-	border-radius: 4px;
-	border-width: 2px;
-	margin: 0px 5px 0px 0px;
+	border-radius: 0.25rem;
+	border-width: 0.125rem;
+	margin-top: 0.5rem;
 	display: flex;
 	align-items: center;
-	padding: 2px;
+	padding: 0.125rem;
+	background: #fff;
 `
 export const TextCheckBox = styled.label.attrs(
 	(props: { color: string }) => props
 )`
-	font-size: 20px;
+	font-size: 1.25rem;
 	color: ${(props) => props.color};
-	margin-top: 2.5px;
+	margin-top: 0.156rem;
 	font-weight: 500;
 `

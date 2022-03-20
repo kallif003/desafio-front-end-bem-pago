@@ -7,7 +7,6 @@ const Amounts = () => {
 
 	function addition() {
 		setAumounts((amounts) => amounts + 1)
-		console.log(typeof amounts)
 	}
 
 	function subtraction() {

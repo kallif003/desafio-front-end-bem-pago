@@ -1,5 +1,6 @@
 import * as React from "react"
 import { render } from "@testing-library/react"
+import userEvent from "@testing-library/user-event"
 
 import { CheckboxDiv, CheckboxContainer, Checkbox, TextCheckBox } from "./"
 
@@ -19,5 +20,9 @@ describe("Checkbox components", () => {
 	it("Renders TextCheckBox properly", () => {
 		const { container } = render(<TextCheckBox>Test</TextCheckBox>)
 		expect(container.firstChild).toMatchSnapshot()
+	})
+	it("test Checkbox button ", () => {
+		const { container } = render(<Checkbox>Test</Checkbox>)
+		userEvent.click(container)
 	})
 })

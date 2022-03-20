@@ -2,7 +2,7 @@
 
 exports[`Header components Renders Header properly 1`] = `
 <header
-  class="sc-bdvvtL eQnGkQ"
+  class="sc-bdvvtL kGvRYS"
 >
   Test
 </header>
@@ -10,7 +10,7 @@ exports[`Header components Renders Header properly 1`] = `
 
 exports[`Header components Renders HeaderTitle properly 1`] = `
 <div
-  class="sc-gsDKAQ lfgbhY"
+  class="sc-gsDKAQ iOVEzF"
 >
   Test
 </div>
