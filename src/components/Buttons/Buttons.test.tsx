@@ -21,4 +21,12 @@ describe("Buttons components", () => {
 		const { container } = render(<PlusAndMinusButton>+</PlusAndMinusButton>)
 		userEvent.click(container)
 	})
+	it("Renders SubmitButton properly", () => {
+		const { container } = render(<SubmitButton>Test</SubmitButton>)
+		expect(container.firstChild).toMatchSnapshot()
+	})
+	it("Renders PlusAndMinusButton properly", () => {
+		const { container } = render(<PlusAndMinusButton>Test</PlusAndMinusButton>)
+		expect(container.firstChild).toMatchSnapshot()
+	})
 })

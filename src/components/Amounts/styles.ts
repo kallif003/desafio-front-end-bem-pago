@@ -1,18 +1,18 @@
 import styled from "styled-components"
 
 export const AmountsDiv = styled.div`
-	width: 20em;
-	margin: 0.5em;
+	width: 20rem;
+	margin: 0.5rem;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 0em 8em 0em 0em;
+	padding-right: 8rem;
 `
 export const AmountsLabel = styled.label`
 	background: #dde3e8;
-	width: 3em;
-	height: 1.5em;
+	width: 3rem;
+	height: 1.5rem;
 	text-align: center;
-	border-radius: 0.31em;
-	border: 0.1em solid #2f3676;
+	border-radius: 0.31rem;
+	border: 0.1rem solid #2f3676;
 `

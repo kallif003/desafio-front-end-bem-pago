@@ -2,16 +2,32 @@
 
 exports[`Buttons components Renders Plus and minus button properly 1`] = `
 <button
-  class="sc-gsDKAQ kvFkNF"
+  class="sc-gsDKAQ dlHsdh"
 >
   +
 </button>
 `;
 
+exports[`Buttons components Renders PlusAndMinusButton properly 1`] = `
+<button
+  class="sc-gsDKAQ dlHsdh"
+>
+  Test
+</button>
+`;
+
 exports[`Buttons components Renders Submit button properly 1`] = `
 <button
-  class="sc-bdvvtL dcdrDj"
+  class="sc-bdvvtL kDPKLz"
 >
   Enviar
+</button>
+`;
+
+exports[`Buttons components Renders SubmitButton properly 1`] = `
+<button
+  class="sc-bdvvtL kDPKLz"
+>
+  Test
 </button>
 `;

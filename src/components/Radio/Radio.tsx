@@ -17,6 +17,7 @@ const MyRadio = ({ name }: any) => {
 				<Radio
 					onClick={() => handleRadioChange(name)}
 					background={checked ? "#202552" : "#fff"}
+					data-testid="radio"
 				/>
 				<TextRadio>{name}</TextRadio>
 			</RadioContainer>

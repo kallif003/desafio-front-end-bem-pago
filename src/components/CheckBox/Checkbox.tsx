@@ -4,7 +4,7 @@ import { Checkbox, CheckboxContainer, TextCheckBox } from "./"
 import Icon from "@mdi/react"
 import { mdiCheckBold } from "@mdi/js"
 
-const MyCheckBox = ({ name }: any) => {
+const MyCheckBox = ({ name, disable }: any) => {
 	const [checked, setChecked] = useState(false)
 	const [checkbox, setCheckbox] = useState("")
 
@@ -13,10 +13,13 @@ const MyCheckBox = ({ name }: any) => {
 		setChecked(!checked)
 		if (!checked) setCheckbox("")
 	}
+
 	return (
 		<div>
 			<CheckboxContainer background={checked ? "#282e64" : "#fff"}>
-				<Checkbox onClick={() => handleCheckboxChange(name)}>
+				<Checkbox
+					onClick={() => handleCheckboxChange(name)}
+					data-testid="check">
 					{checked ? (
 						<Icon
 							path={mdiCheckBold}

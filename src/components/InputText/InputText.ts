@@ -7,9 +7,9 @@ export const InputText = styled.textarea.attrs({
 	placeholder: "Digite aqui suas observações:",
 })`
 	background: #dde3e8;
-	margin: 2em;
-	padding: 1em;
-	border-radius: 0.31em;
+	margin: 2rem;
+	padding: 1rem;
+	border-radius: 0.31rem;
 	width: 90%;
 	resize: none;
 `
