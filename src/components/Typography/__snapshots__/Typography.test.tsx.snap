@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`typography components Renders H1 components 1`] = `
+<h1
+  class="sc-bdvvtL yleZX"
+>
+  Test
+</h1>
+`;
+
+exports[`typography components Renders H2 components 1`] = `
+<h2
+  class="sc-gsDKAQ bmgcIC"
+>
+  Test
+</h2>
+`;
