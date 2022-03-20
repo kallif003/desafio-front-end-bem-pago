@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Amounts components Renders AmountsDiv properly 1`] = `
+<div
+  class="sc-bdvvtL dzBlcj"
+>
+  Test
+</div>
+`;
+
+exports[`Amounts components Renders AmountsLabel properly 1`] = `
+<label
+  class="sc-gsDKAQ gZOjYS"
+>
+  Test
+</label>
+`;
