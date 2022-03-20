@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header components Renders Header properly 1`] = `
-<div
+<header
   class="sc-bdvvtL eQnGkQ"
 >
   Test
-</div>
+</header>
 `;
 
 exports[`Header components Renders HeaderTitle properly 1`] = `

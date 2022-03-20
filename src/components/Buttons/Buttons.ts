@@ -16,8 +16,8 @@ export const SubmitButton = styled.button`
 	}
 `
 export const PlusAndMinusButton = styled.button`
-	width: 4em;
-	height: 4em;
+	width: 2em;
+	height: 2em;
 	background: #2f3676;
 	padding: 5px;
 	color: #fff;
