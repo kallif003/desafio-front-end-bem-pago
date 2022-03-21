@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+import { useState, useContext } from "react"
 import type { NextPage } from "next"
 import Image from "next/image"
 import box from "../../../assets/box.png"
@@ -8,17 +10,38 @@ import {
 	HeaderContainerImage,
 } from "../../components/Header"
 import { H1, H2 } from "../../components/Typography"
-import MyCheckBox from "../../components/CheckBox/Checkbox"
-import { CheckboxDiv } from "../../components/CheckBox"
-import MyRadio from "../../components/Radio/Radio"
-import { RadioDiv } from "../../components/Radio"
+
+import {
+	CheckboxContainer,
+	Checkbox,
+	CheckboxDiv,
+	TextCheckBox,
+} from "../../components/CheckBox"
+
+import {
+	RadioDiv,
+	RadioContainer,
+	Radio,
+	TextRadio,
+} from "../../components/Radio"
 import { ContainerAmount } from "../../components/Amounts"
 import Amounts from "../../components/Amounts/Amounts"
 import { InputText, ContainerInputText } from "../../components/InputText"
 import { Footer } from "../../components/Footer"
 import { SubmitButton, ContainerButton } from "../../components/Buttons"
+import { Formik, Form, FormikHelpers, Field } from "formik"
+import { AuthContext } from "../../context/Auth"
 
-const HomePage: NextPage = () => {
+interface Values {
+	Stickers: string
+	Size: string
+	inputText: string
+}
+
+const HomePage = () => {
+	const [checked, setChecked] = useState(false)
+	const CustomInputComponent = (props: any) => <InputText {...props} />
+	const { getResquest }: any = useContext(AuthContext)
 	return (
 		<div>
 			<Header>
@@ -51,37 +74,69 @@ const HomePage: NextPage = () => {
 			</Header>
 
 			<H2>Escolha seus adesivos:</H2>
-			<CheckboxDiv>
-				<MyCheckBox name="React" />
-				<MyCheckBox name="Next" />
-				<MyCheckBox name="Vue" />
-			</CheckboxDiv>
+			<Formik
+				initialValues={{
+					Stickers: "",
+					Size: "",
+					inputText: "",
+				}}
+				onSubmit={(values: Values) => {
+					getResquest(values)
+				}}>
+				<Form>
+					<CheckboxDiv>
+						<CheckboxContainer background={checked ? "#282e64" : "#ddd"} id="s">
+							<Checkbox type="checkbox" name="Stickers" value="React" />
+							<TextCheckBox>React</TextCheckBox>
+						</CheckboxContainer>
 
-			<H2>Escolha o tamanho:</H2>
+						<CheckboxContainer background={checked ? "#282e64" : "#ddd"}>
+							<Checkbox type="checkbox" name="Stickers" value="Next" />
+							<TextCheckBox>Next</TextCheckBox>
+						</CheckboxContainer>
 
-			<RadioDiv>
-				<MyRadio name="P" />
-				<MyRadio name="M" />
-				<MyRadio name="G" />
-			</RadioDiv>
+						<CheckboxContainer background={checked ? "#282e64" : "#ddd"}>
+							<Checkbox type="checkbox" name="Stickers" value="Vue" />
+							<TextCheckBox>Vue</TextCheckBox>
+						</CheckboxContainer>
+					</CheckboxDiv>
 
-			<H2>Escolha a quantidade:</H2>
+					<H2>Escolha o tamanho:</H2>
 
-			<ContainerAmount>
-				<Amounts />
-			</ContainerAmount>
+					<RadioDiv>
+						<RadioContainer>
+							<Radio type="radio" name="Size" value="P" />
+							<TextRadio>P</TextRadio>
+							<Radio type="radio" name="Size" value="M" />
+							<TextRadio>M</TextRadio>
+							<Radio type="radio" name="Size" value="G" />
+							<TextRadio>G</TextRadio>
+						</RadioContainer>
+					</RadioDiv>
 
-			<H2>Observações:</H2>
+					<H2>Escolha a quantidade:</H2>
 
-			<ContainerInputText>
-				<InputText />
-			</ContainerInputText>
+					<ContainerAmount>
+						<Amounts />
+					</ContainerAmount>
 
-			<Footer>
-				<ContainerButton>
-					<SubmitButton>Enviar</SubmitButton>
-				</ContainerButton>
-			</Footer>
+					<H2>Observações:</H2>
+
+					<ContainerInputText>
+						<Field
+							name="Input"
+							as={CustomInputComponent}
+							data-testid="textbox"
+						/>
+					</ContainerInputText>
+
+					<Footer>
+						<ContainerButton>
+							<SubmitButton type="submit">Enviar</SubmitButton>
+						</ContainerButton>
+					</Footer>
+				</Form>
+			</Formik>
 		</div>
 	)
 }

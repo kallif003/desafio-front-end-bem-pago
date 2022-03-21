@@ -1,13 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Checkbox components Renders Checkbox properly 1`] = `
-<button
-  class="sc-dkPtRN givXCM"
->
-  Test
-</button>
-`;
-
 exports[`Checkbox components Renders CheckboxContainer properly 1`] = `
 <div
   class="sc-gsDKAQ fpwdZo"
