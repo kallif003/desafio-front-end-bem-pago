@@ -2,7 +2,7 @@
 
 exports[`Amounts components Renders AmountsDiv properly 1`] = `
 <div
-  class="sc-bdvvtL bXiWEU"
+  class="sc-bdvvtL dAZWIv"
 >
   Test
 </div>
@@ -10,7 +10,7 @@ exports[`Amounts components Renders AmountsDiv properly 1`] = `
 
 exports[`Amounts components Renders AmountsLabel properly 1`] = `
 <label
-  class="sc-gsDKAQ hvfkZO"
+  class="sc-gsDKAQ bifwPA"
 >
   Test
 </label>

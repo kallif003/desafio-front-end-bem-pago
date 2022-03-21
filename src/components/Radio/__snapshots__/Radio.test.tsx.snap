@@ -2,7 +2,7 @@
 
 exports[`Radio components Renders Radio properly 1`] = `
 <div
-  class="sc-dkPtRN WmCzP"
+  class="sc-dkPtRN lbIIeS"
 >
   Test
 </div>
@@ -10,7 +10,7 @@ exports[`Radio components Renders Radio properly 1`] = `
 
 exports[`Radio components Renders RadioContainer properly 1`] = `
 <div
-  class="sc-gsDKAQ kPfSor"
+  class="sc-gsDKAQ jRzWXf"
 >
   Test
 </div>
@@ -18,7 +18,7 @@ exports[`Radio components Renders RadioContainer properly 1`] = `
 
 exports[`Radio components Renders RadioDiv properly 1`] = `
 <div
-  class="sc-bdvvtL cEMgQm"
+  class="sc-bdvvtL brsFqP"
 >
   Test
 </div>
