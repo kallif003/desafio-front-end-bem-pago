@@ -16,7 +16,7 @@ const MyCheckBox = ({ name, disable }: any) => {
 
 	return (
 		<div>
-			<CheckboxContainer background={checked ? "#282e64" : "#fff"}>
+			<CheckboxContainer background={checked ? "#282e64" : "#ddd"}>
 				<Checkbox
 					onClick={() => handleCheckboxChange(name)}
 					data-testid="check">

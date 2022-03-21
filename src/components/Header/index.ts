@@ -1,1 +1,6 @@
-export { Header, HeaderTitle } from "./Header"
+export {
+	Header,
+	HeaderTitle,
+	HeaderImage,
+	HeaderContainerImage,
+} from "./Header"

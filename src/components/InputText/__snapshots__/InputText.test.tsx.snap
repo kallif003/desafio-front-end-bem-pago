@@ -2,7 +2,7 @@
 
 exports[`Input Text components Renders Input Text components 1`] = `
 <textarea
-  class="sc-bdvvtL ckVqE"
+  class="sc-bdvvtL iDzMua"
   cols="80"
   name="inputText"
   placeholder="Digite aqui suas observações:"

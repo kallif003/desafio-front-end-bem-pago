@@ -2,7 +2,7 @@
 
 exports[`Buttons components Renders Plus and minus button properly 1`] = `
 <button
-  class="sc-gsDKAQ dlHsdh"
+  class="sc-gsDKAQ zJduh"
 >
   +
 </button>
@@ -10,7 +10,7 @@ exports[`Buttons components Renders Plus and minus button properly 1`] = `
 
 exports[`Buttons components Renders PlusAndMinusButton properly 1`] = `
 <button
-  class="sc-gsDKAQ dlHsdh"
+  class="sc-gsDKAQ zJduh"
 >
   Test
 </button>
@@ -18,7 +18,7 @@ exports[`Buttons components Renders PlusAndMinusButton properly 1`] = `
 
 exports[`Buttons components Renders Submit button properly 1`] = `
 <button
-  class="sc-bdvvtL kDPKLz"
+  class="sc-bdvvtL fyVvKv"
 >
   Enviar
 </button>
@@ -26,7 +26,7 @@ exports[`Buttons components Renders Submit button properly 1`] = `
 
 exports[`Buttons components Renders SubmitButton properly 1`] = `
 <button
-  class="sc-bdvvtL kDPKLz"
+  class="sc-bdvvtL fyVvKv"
 >
   Test
 </button>

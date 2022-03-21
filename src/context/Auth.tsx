@@ -4,9 +4,7 @@ import { createContext } from "react"
 export const AuthContext = createContext({})
 
 function AuthProvider({ children }: any) {
-	return (
-		<AuthContext.Provider value={{ name }}>{children}</AuthContext.Provider>
-	)
+	return <AuthContext.Provider value={{}}>{children}</AuthContext.Provider>
 }
 
 export default AuthProvider
