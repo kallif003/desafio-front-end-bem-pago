@@ -2,10 +2,14 @@ import styled from "styled-components"
 
 export const CheckboxDiv = styled.div`
 	padding: 0.31rem;
-	width: 10rem;
-	height: auto;
-	justify-content: center;
-	margin: 0.5rem;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 0 0 5.8rem;
+	@media (max-width: 768px) {
+		align-items: center;
+		margin-left: 0;
+	}
 `
 
 export const CheckboxContainer = styled.div.attrs(
@@ -17,7 +21,7 @@ export const CheckboxContainer = styled.div.attrs(
 	padding: 0.067rem 2.5rem 0.38rem 0.067rem;
 	margin: 0.5rem;
 	width: 8.2rem;
-	height: 2.5rem;
+
 	border-radius: 0.31rem;
 	background: ${(props) => props.background};
 `

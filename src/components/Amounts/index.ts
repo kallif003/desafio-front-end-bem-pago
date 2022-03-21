@@ -1,1 +1,1 @@
-export { AmountsDiv, AmountsLabel } from "./styles"
+export { AmountsDiv, AmountsLabel, ContainerAmount } from "./styles"
