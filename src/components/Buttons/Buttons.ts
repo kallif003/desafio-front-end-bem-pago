@@ -39,7 +39,7 @@ export const ContainerButton = styled.div`
 	width: 110vw;
 	display: flex;
 	justify-content: right;
-	padding-right: 3.5rem;
+	padding-right: 3.9rem;
 	@media (max-width: 768px) {
 		justify-content: center;
 		padding-left: 2rem;

@@ -32,7 +32,7 @@ export const HeaderTitle = styled.div`
 		width: 45rem;
 	}
 	@media (min-width: 1279px) {
-		padding: 0rem 0 5rem 4rem;
+		padding: 0rem 0 5rem 2.6rem;
 	} ;
 `
 export const HeaderImage = styled.div`

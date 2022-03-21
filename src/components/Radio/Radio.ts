@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Field } from "formik"
 
 export const RadioDiv = styled.div`
 	width: 25rem;
@@ -14,20 +15,17 @@ export const RadioDiv = styled.div`
 export const RadioContainer = styled.div`
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 	padding: 1.1rem;
 `
-export const Radio = styled.div.attrs((props: { background: string }) => props)`
+export const Radio = styled(Field)`
 	width: 1rem;
 	height: 1rem;
-	border: solid #ccc;
-	border-radius: 4rem;
-	border-width: 0.125rem;
 	margin: 0.125rem 0.313rem 0 0;
-	background: ${(props) => props.background};
 `
 export const TextRadio = styled.label`
 	font-size: 1.25rem;
-	margin-top: 0.0312rem;
+	margin: 0.0312rem 2rem 0 0;
 	font-weight: 500;
+	color: #000;
 `

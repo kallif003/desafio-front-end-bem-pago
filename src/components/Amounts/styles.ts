@@ -13,11 +13,11 @@ export const AmountsDiv = styled.div`
 export const AmountsLabel = styled.label`
 	background: #dde3e8;
 	width: 3rem;
-	height: 1.5rem;
+	height: 2.2rem;
 	text-align: center;
 	border-radius: 0.31rem;
 	border: 0.1rem solid #2f3676;
-	margin-top: 0.4rem;
+	font-size: 1.25rem;
 `
 export const ContainerAmount = styled.div`
 	@media (max-width: 768px) {

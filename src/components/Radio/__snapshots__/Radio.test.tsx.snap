@@ -1,16 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Radio components Renders Radio properly 1`] = `
-<div
-  class="sc-dkPtRN lbIIeS"
->
-  Test
-</div>
-`;
-
 exports[`Radio components Renders RadioContainer properly 1`] = `
 <div
-  class="sc-gsDKAQ jRzWXf"
+  class="sc-gsDKAQ fzACFK"
 >
   Test
 </div>
@@ -26,7 +18,7 @@ exports[`Radio components Renders RadioDiv properly 1`] = `
 
 exports[`Radio components Renders TextRadio properly 1`] = `
 <label
-  class="sc-hKwDye gCYIDt"
+  class="sc-hKwDye XYNJj"
 >
   Test
 </label>

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Field } from "formik"
 
 export const CheckboxDiv = styled.div`
 	width: auto;
@@ -24,17 +25,10 @@ export const CheckboxContainer = styled.div.attrs(
 	border-radius: 0.31rem;
 	background: ${(props) => props.background};
 `
-export const Checkbox = styled.button`
+export const Checkbox = styled(Field)`
 	width: 1.2rem;
 	height: 1.2rem;
-	border: solid #ccc;
-	border-radius: 0.25rem;
-	border-width: 0.125rem;
-	margin-top: 0.5rem;
-	display: flex;
-	align-items: center;
-	padding: 0.125rem;
-	background: #fff;
+	margin-top: 0.3rem;
 `
 export const TextCheckBox = styled.label.attrs(
 	(props: { color: string }) => props

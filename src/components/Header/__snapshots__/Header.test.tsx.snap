@@ -10,7 +10,7 @@ exports[`Header components Renders Header properly 1`] = `
 
 exports[`Header components Renders HeaderTitle properly 1`] = `
 <div
-  class="sc-gsDKAQ ecdZyA"
+  class="sc-gsDKAQ qWWSe"
 >
   Test
 </div>

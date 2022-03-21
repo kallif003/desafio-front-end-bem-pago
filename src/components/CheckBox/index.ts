@@ -3,4 +3,4 @@ export {
 	CheckboxContainer,
 	Checkbox,
 	TextCheckBox,
-} from "./styles"
+} from "./Checkbox"
