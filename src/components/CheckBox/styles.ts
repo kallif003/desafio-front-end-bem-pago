@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const CheckboxDiv = styled.div`
-	padding: 0.31rem;
 	width: auto;
 	display: flex;
 	flex-direction: column;
@@ -21,7 +20,7 @@ export const CheckboxContainer = styled.div.attrs(
 	padding: 0.067rem 2.5rem 0.38rem 0.067rem;
 	margin: 0.5rem;
 	width: 8.2rem;
-
+	height: 2.5rem;
 	border-radius: 0.31rem;
 	background: ${(props) => props.background};
 `

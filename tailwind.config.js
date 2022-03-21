@@ -18,8 +18,6 @@ module.exports = {
 			xl: { min: "1280px" },
 			// => @media (min-width: 1280px) { ... }
 		},
-		backgroundSize: { "100%": "100%" },
 	},
-
 	plugins: [],
 }

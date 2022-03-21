@@ -2,7 +2,7 @@
 
 exports[`typography components Renders H1 components 1`] = `
 <h1
-  class="sc-bdvvtL bwDMfC"
+  class="sc-bdvvtL iRbCDB"
 >
   Test
 </h1>
@@ -10,7 +10,7 @@ exports[`typography components Renders H1 components 1`] = `
 
 exports[`typography components Renders H2 components 1`] = `
 <h2
-  class="sc-gsDKAQ fusehV"
+  class="sc-gsDKAQ dNUqpQ"
 >
   Test
 </h2>

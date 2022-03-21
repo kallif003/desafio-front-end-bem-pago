@@ -10,7 +10,7 @@ exports[`Checkbox components Renders Checkbox properly 1`] = `
 
 exports[`Checkbox components Renders CheckboxContainer properly 1`] = `
 <div
-  class="sc-gsDKAQ euextY"
+  class="sc-gsDKAQ fpwdZo"
 >
   Test
 </div>
@@ -18,7 +18,7 @@ exports[`Checkbox components Renders CheckboxContainer properly 1`] = `
 
 exports[`Checkbox components Renders CheckboxDiv properly 1`] = `
 <div
-  class="sc-bdvvtL khowFZ"
+  class="sc-bdvvtL dkYVrB"
 >
   Test
 </div>
