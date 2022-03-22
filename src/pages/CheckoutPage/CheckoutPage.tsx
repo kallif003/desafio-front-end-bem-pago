@@ -74,7 +74,7 @@ const CheckoutPage: NextPage = () => {
 					<h2>Quantidade</h2>
 				</div>
 				<div className="flex flex-row bg-[#dddc] w-[300px]  py-1 px-3 rounded-md">
-					<h2 className="pr-20">{data.Stickers[0]}</h2>
+					<h2 className="pr-20">{data.Stickers}</h2>
 					<h2 className="pr-24">{data.Size}</h2>
 					<h2>{data.Amounts}</h2>
 				</div>
