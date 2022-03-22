@@ -1,28 +1,26 @@
 import styled from "styled-components"
+import { Field } from "formik"
 
 export const AmountsDiv = styled.div`
-	width: 20rem;
-	margin: 1.5rem 0 0 3.5rem;
+	width: 220px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	@media (max-width: 768px) {
-		margin: 1.5rem 0 0 0;
-	}
 `
-export const AmountsLabel = styled.label`
-	background: #dde3e8;
-	width: 3rem;
+export const AmountsLabel = styled(Field)`
+	width: 4rem;
 	height: 2.2rem;
-	text-align: center;
-	border-radius: 0.31rem;
-	border: 0.1rem solid #2f3676;
-	font-size: 1.25rem;
+	padding-left: 1rem;
 `
 export const ContainerAmount = styled.div`
+	background: #ccc;
+	padding: 1rem 0 0 5rem;
 	@media (max-width: 768px) {
+		padding-left: 2rem;
 		display: flex;
-		align-items: center;
 		justify-content: center;
-	} ;
+	}
+	@media (max-width: 1024px) {
+		padding-left: 5rem;
+	}
 `

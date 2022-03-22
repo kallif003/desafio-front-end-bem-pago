@@ -16,7 +16,7 @@ export const H1 = styled.h1.attrs(
 `
 export const H2 = styled.h2`
 	font-size: 1.2rem;
-	padding: 3rem 0 0 6.8rem;
+	padding: 3rem 0 0 6.6rem;
 	@media (max-width: 768px) {
 		text-align: center;
 		padding: 3rem 0 0 0;

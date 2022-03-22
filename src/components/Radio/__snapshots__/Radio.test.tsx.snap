@@ -10,7 +10,7 @@ exports[`Radio components Renders RadioContainer properly 1`] = `
 
 exports[`Radio components Renders RadioDiv properly 1`] = `
 <div
-  class="sc-bdvvtL brsFqP"
+  class="sc-bdvvtL DyMPU"
 >
   Test
 </div>

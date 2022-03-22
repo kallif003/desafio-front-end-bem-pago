@@ -2,16 +2,8 @@
 
 exports[`Amounts components Renders AmountsDiv properly 1`] = `
 <div
-  class="sc-bdvvtL dAZWIv"
+  class="sc-bdvvtL dmpUJf"
 >
   Test
 </div>
-`;
-
-exports[`Amounts components Renders AmountsLabel properly 1`] = `
-<label
-  class="sc-gsDKAQ laJJSB"
->
-  Test
-</label>
 `;

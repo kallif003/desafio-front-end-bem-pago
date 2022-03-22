@@ -1,24 +1,24 @@
 import { AmountsLabel, AmountsDiv } from "./"
 import { PlusAndMinusButton } from "../Buttons"
-import { useContext } from "react"
-import { AuthContext } from "../../context/Auth"
 
-const Amounts = () => {
-	const { addition, subtraction, amounts }: any = useContext(AuthContext)
+const Amounts = ({ setFieldValue, value }: any) => {
+	// const { addition, subtraction, amounts }: any = useContext(AuthContext)
+
+	const onPlus = () => {
+		setFieldValue("amount", Number(value) + 1)
+	}
+
+	const onMinus = () => {
+		if (value > 0) setFieldValue("amount", Number(value) - 1)
+	}
 
 	return (
 		<AmountsDiv>
-			<PlusAndMinusButton
-				onClick={subtraction}
-				data-testid="subtraction"
-				type="button">
+			<PlusAndMinusButton onClick={onMinus} type="button">
 				-
 			</PlusAndMinusButton>
-			<AmountsLabel>{amounts}</AmountsLabel>
-			<PlusAndMinusButton
-				onClick={addition}
-				data-testid="addition"
-				type="button">
+			<AmountsLabel name="amount" min={0} type="number" />
+			<PlusAndMinusButton onClick={onPlus} type="button">
 				+
 			</PlusAndMinusButton>
 		</AmountsDiv>

@@ -1,30 +1,20 @@
 /* eslint-disable no-unused-vars */
-import { createContext, useState } from "react"
+import { createContext } from "react"
 
 export const AuthContext = createContext({})
-
+let data: object = {}
 function AuthProvider({ children }: any) {
-	const [amounts, setAumounts] = useState(0)
-
 	const getResquest = (values: any) => {
-		const data = {
+		data = {
 			Stickers: values.Stickers,
 			Size: values.Size,
 			Text: values.inputText,
-			Amounts: amounts,
+			Amounts: values.amounts,
 		}
 	}
 
-	function addition() {
-		setAumounts((amounts) => amounts + 1)
-	}
-
-	function subtraction() {
-		if (amounts > 0) setAumounts((amounts) => amounts - 1)
-	}
 	return (
-		<AuthContext.Provider
-			value={{ amounts, getResquest, addition, subtraction }}>
+		<AuthContext.Provider value={{ getResquest, data }}>
 			{children}
 		</AuthContext.Provider>
 	)

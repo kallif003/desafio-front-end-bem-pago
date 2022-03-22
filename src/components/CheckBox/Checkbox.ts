@@ -5,15 +5,15 @@ export const CheckboxDiv = styled.div`
 	width: auto;
 	display: flex;
 	flex-direction: column;
-	margin: 1rem 0 0 5.8rem;
+	padding: 1rem 0 0 6.1rem;
 	@media (max-width: 768px) {
 		align-items: center;
-		margin-left: 0;
+		padding: 0;
 	}
 `
 
 export const CheckboxContainer = styled.div.attrs(
-	(props: { background: string }) => props
+	(props: { active: boolean }) => props
 )`
 	display: flex;
 	align-items: center;
@@ -23,18 +23,20 @@ export const CheckboxContainer = styled.div.attrs(
 	width: 8.2rem;
 	height: 2.5rem;
 	border-radius: 0.31rem;
-	background: ${(props) => props.background};
+	background: ${(props) => (props.active ? "#282e64" : "#ddd")};
+	color: ${(props) => (props.active ? "red" : "#ddd")};
 `
+
 export const Checkbox = styled(Field)`
 	width: 1.2rem;
 	height: 1.2rem;
 	margin-top: 0.3rem;
 `
 export const TextCheckBox = styled.label.attrs(
-	(props: { color: string }) => props
+	(props: { active: boolean }) => props
 )`
 	font-size: 1.25rem;
-	color: ${(props) => props.color};
+	color: ${(props) => (props.active ? "#fff" : "#000")};
 	margin-top: 0.156rem;
 	font-weight: 500;
 `

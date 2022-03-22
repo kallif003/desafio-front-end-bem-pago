@@ -2,14 +2,12 @@ import styled from "styled-components"
 import { Field } from "formik"
 
 export const RadioDiv = styled.div`
-	width: 25rem;
-	margin-left: 5.5rem;
 	display: flex;
 	flex-direction: row;
+	padding-left: 5.4rem;
 	@media (max-width: 768px) {
 		justify-content: center;
-		margin: 0 0.1rem 0 0;
-		width: auto;
+		padding-left: 2.4rem;
 	}
 `
 export const RadioContainer = styled.div`
