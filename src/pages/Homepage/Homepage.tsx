@@ -29,8 +29,9 @@ import Amounts from "../../components/Amounts/Amounts"
 import { InputText, ContainerInputText } from "../../components/InputText"
 import { Footer } from "../../components/Footer"
 import { SubmitButton, ContainerButton } from "../../components/Buttons"
-import { Formik, Form, FormikHelpers, Field } from "formik"
+import { Formik, Form, Field } from "formik"
 import { AuthContext } from "../../context/Auth"
+import Link from "next/link"
 
 import * as Yup from "yup"
 
@@ -52,10 +53,9 @@ const FormSchema = Yup.object().shape({
 	amount: Yup.number().min(1, "Selecione uma quantidade").required(),
 })
 
-const HomePage = () => {
-	const [checked, setChecked] = useState(false)
+const HomePage: NextPage = () => {
 	const CustomInputComponent = (props: any) => <InputText {...props} />
-	const { getResquest, data }: any = useContext(AuthContext)
+	const { getResquest }: any = useContext(AuthContext)
 
 	return (
 		<div>
@@ -83,7 +83,7 @@ const HomePage = () => {
 						<Image src={box} alt="box" width={150} height={150} />
 					</HeaderImage>
 				</HeaderContainerImage>
-				<h1 className="text-white text-center hidden sm:block text-[2rem]">
+				<h1 className="text-white text-center hidden sm:block text-[2rem] font-bold">
 					Formulário
 				</h1>
 			</Header>
@@ -101,7 +101,6 @@ const HomePage = () => {
 					getResquest(values)
 				}}>
 				{(formikProps) => {
-					console.log(formikProps.errors)
 					return (
 						<Form>
 							<CheckboxDiv>

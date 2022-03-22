@@ -1,7 +1,8 @@
 /* eslint-disable prettier/prettier */
 import type { NextPage } from "next"
 import Head from "next/head"
-import HomePage from "./HomePage/HomePage"
+
+import HomePage from "./Homepage/Homepage"
 
 const Home: NextPage = () => {
 	return (
