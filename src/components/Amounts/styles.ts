@@ -13,14 +13,14 @@ export const AmountsLabel = styled(Field)`
 	padding-left: 1rem;
 `
 export const ContainerAmount = styled.div`
-	background: #ccc;
 	padding: 1rem 0 0 5rem;
-	@media (max-width: 768px) {
-		padding-left: 2rem;
+	@media (min-width: 0) and (max-width: 768px) {
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		padding-left: 0;
+		align-items: center;
 	}
-	@media (max-width: 1024px) {
+	@media (min-width: 769px) and (max-width: 1024px) {
 		padding-left: 5rem;
 	}
 `

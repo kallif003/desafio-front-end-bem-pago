@@ -5,7 +5,7 @@ import AuthProvider from "../context/Auth"
 const MyApp = function ({ Component, pageProps }: AppProps) {
 	return (
 		<AuthProvider>
-			<Component {...pageProps} />{" "}
+			<Component {...pageProps} />
 		</AuthProvider>
 	)
 }
