@@ -14,11 +14,11 @@ const Amounts = ({ setFieldValue, value }: any) => {
 
 	return (
 		<AmountsDiv>
-			<PlusAndMinusButton onClick={onMinus} type="button">
+			<PlusAndMinusButton onClick={onMinus} type="button" data-cy="minus">
 				-
 			</PlusAndMinusButton>
-			<AmountsLabel name="amount" min={0} type="number" />
-			<PlusAndMinusButton onClick={onPlus} type="button">
+			<AmountsLabel name="amount" min={0} type="number" data-cy="label" />
+			<PlusAndMinusButton onClick={onPlus} type="button" data-cy="plus">
 				+
 			</PlusAndMinusButton>
 		</AmountsDiv>

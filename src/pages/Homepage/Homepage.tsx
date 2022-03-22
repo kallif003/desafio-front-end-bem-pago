@@ -59,8 +59,10 @@ const HomePage: NextPage = () => {
 
 	return (
 		<div>
-			<Header>
-				<HeaderTitle className="md:leading-8  xl:leading-[50px]">
+			<Header data-cy="header">
+				<HeaderTitle
+					className="md:leading-8  xl:leading-[50px]"
+					data-cy="textHeader">
 					<H1 color="#ccc" fontWeight="normal ">
 						Formulário
 					</H1>
@@ -103,8 +105,9 @@ const HomePage: NextPage = () => {
 				{(formikProps) => {
 					return (
 						<Form>
-							<CheckboxDiv>
+							<CheckboxDiv data-cy="checkbox">
 								<CheckboxContainer
+									data-cy="check"
 									active={formikProps.values.Stickers.includes("React")}>
 									<Checkbox type="checkbox" name="Stickers" value="React" />
 									<TextCheckBox
@@ -137,7 +140,7 @@ const HomePage: NextPage = () => {
 
 							<H2>Escolha o tamanho:</H2>
 
-							<RadioDiv>
+							<RadioDiv data-cy="radio">
 								<RadioContainer>
 									<Radio type="radio" name="Size" value="P" />
 									<TextRadio>P</TextRadio>
@@ -153,7 +156,7 @@ const HomePage: NextPage = () => {
 
 							<H2>Escolha a quantidade:</H2>
 
-							<ContainerAmount>
+							<ContainerAmount data-cy="amounts">
 								<Amounts
 									setFieldValue={formikProps.setFieldValue}
 									value={formikProps.values.amount}
@@ -169,11 +172,11 @@ const HomePage: NextPage = () => {
 								<Field
 									name="Input"
 									as={CustomInputComponent}
-									data-testid="textbox"
+									data-cy="textbox"
 								/>
 							</ContainerInputText>
 
-							<Footer>
+							<Footer data-cy="footer">
 								<ContainerButton>
 									<SubmitButton type="submit">Enviar</SubmitButton>
 								</ContainerButton>

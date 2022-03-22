@@ -38,7 +38,9 @@ const CheckoutPage: NextPage = () => {
 	return (
 		<div>
 			<Header>
-				<HeaderTitle className="md:leading-8  xl:leading-[50px]">
+				<HeaderTitle
+					className="md:leading-8  xl:leading-[50px]"
+					data-cy="textHeader-checkout-page">
 					<H1 color="#ccc" fontWeight="normal ">
 						Estamos
 					</H1>
@@ -96,7 +98,7 @@ const CheckoutPage: NextPage = () => {
 					return (
 						<Form>
 							<RadioDiv className="sm:pr-6">
-								<RadioContainer>
+								<RadioContainer data-cy="radio-checkout-page">
 									<Radio type="radio" name="Payment" value="Cartão" />
 									<TextRadio>Cartão</TextRadio>
 									<Radio type="radio" name="Payment" value="Pix" />
@@ -109,7 +111,7 @@ const CheckoutPage: NextPage = () => {
 								{formikProps.touched.Payment && formikProps.errors.Payment}
 							</p>
 							<Footer className="mt-20">
-								<ContainerButton>
+								<ContainerButton data-cy="footer-checkout-page">
 									<SubmitButton type="submit">Finalizar</SubmitButton>
 								</ContainerButton>
 							</Footer>
